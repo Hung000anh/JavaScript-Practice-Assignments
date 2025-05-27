@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="heading">Welcome</h1>
+    <p>
+        <strong>Type Conversion</strong> in JavaScript is the process of converting a value from one data type to another, for example from a string to a number, a number to a string, or to a boolean.
+    </p>
+    <ul>
+        <li>There are two types of conversion: <strong>explicit</strong> and <strong>implicit</strong>.</li>
+        <li>Explicit conversion uses functions like <code>Number()</code>, <code>String()</code>, and <code>Boolean()</code>.</li>
+        <li>Implicit conversion happens when JavaScript automatically converts data types during operations.</li>
+    </ul>
+    <pre><code>// Explicit conversion
+const num = Number("123");      // 123 (number)
+const str = String(456);        // "456" (string)
+const bool = Boolean(0);        // false (boolean)
+
+// Implicit conversion
+const result = "5" * 2;         // 10 (number)
+const concat = "5" + 2;         // "52" (string)
+const boolImplicit = !!"hello"; // true (boolean)
+</code></pre>
+    <script src="index.js"></script>
+</body>
+</html>
