@@ -17,11 +17,12 @@ Each folder corresponds to a specific section of the course, with practice code 
 ## 🗂 Folder Structure
 ```plaintext
 javascript-practice-assignments/
-├── 01_variables/
-├── 02_arithmetic_operators/
-├── 03_user_input/
-├── 04_type_conversion/
-├── 05_constants/
+├── 01_intro/
+├── 02_variables/
+├── 03_arithmetic_operators/
+├── 04_user_input/
+├── 05_type_conversion/
+├── 06_constants/
 ├── ...
 ├── 75_weather_app_project/
 ```
