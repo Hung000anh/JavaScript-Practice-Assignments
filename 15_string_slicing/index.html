@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>String Slicing in JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>String Slicing in JavaScript</h1>
+    <ul>
+      <li>
+        <strong>String slicing</strong> is the process of extracting a part
+        (substring) of a string.
+      </li>
+      <li>
+        JavaScript provides the <code>slice()</code> and
+        <code>substring()</code> methods for slicing strings.
+      </li>
+      <li>
+        <code>slice(start, end)</code> extracts from <code>start</code> index up
+        to, but not including, <code>end</code>.
+      </li>
+      <li>
+        Negative indices in <code>slice()</code> count from the end of the
+        string.
+      </li>
+      <li>
+        <code>substring(start, end)</code> is similar, but negative values are
+        treated as 0.
+      </li>
+    </ul>
+    <pre>
+<code>
+// Example:
+let text = "JavaScript String Methods";
+console.log(text.slice(0, 10));      // "JavaScript"
+console.log(text.slice(11));         // "String Methods"
+console.log(text.slice(-7));         // "Methods"
+console.log(text.substring(0, 10));  // "JavaScript"
+console.log(text.substring(11));     // "String Methods"
+</code>
+    </pre>
+    <h2>Interactive Demo</h2>
+    <div class="center-demo">
+      <label for="sliceInput">Enter a string:</label>
+      <input type="text" id="sliceInput" value="JavaScript String Methods" />
+      <br />
+      <div>
+        <label for="startIndex">Start index:</label>
+        <input type="number" id="startIndex" value="0" style="width: 60px" />
+        <label for="endIndex">End index:</label>
+        <input type="number" id="endIndex" value="10" style="width: 60px" />
+      </div>
+
+      <br />
+      <button id="sliceBtn">Slice</button>
+      <div id="sliceResult"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
