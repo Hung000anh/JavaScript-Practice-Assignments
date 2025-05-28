@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checked Property in JavaScript</title>
+</head>
+<body>
+    <h1>Checked Property in JavaScript</h1>
+    <ul>
+        <li>
+            The <strong>checked</strong> property is used to determine whether a checkbox or radio button is selected.
+        </li>
+        <li>
+            You can use JavaScript to get or set the <code>checked</code> property of input elements.
+        </li>
+    </ul>
+    <form id="myForm">
+        <label>
+            <input type="checkbox" id="myCheckbox">
+            I agree to the terms and conditions
+        </label>
+        <br><br>
+        <span>Choose your gender:</span><br>
+        <label>
+            <input type="radio" name="gender" id="maleRadio" value="male">
+            Male
+        </label>
+        <label>
+            <input type="radio" name="gender" id="femaleRadio" value="female">
+            Female
+        </label>
+        <br><br>
+        <button type="button" id="checkBtn">Check Status</button>
+    </form>
+    <p id="result"></p>
+    <pre>
+<code>
+// Example JavaScript:
+const checkbox = document.getElementById('myCheckbox');
+console.log(checkbox.checked); // true if checked, false if not
+
+const maleRadio = document.getElementById('maleRadio');
+console.log(maleRadio.checked); // true if selected
+
+// Set checked state
+checkbox.checked = true; // This will check the box
+maleRadio.checked = true; // This will select the male radio
+</code>
+    </pre>
+    <script src="index.js"></script> 
+</body>
+</html>
