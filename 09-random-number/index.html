@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random Number in JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <h1>Random Number in JavaScript</h1>
+    <ul>
+      <li>
+        JavaScript provides the <strong>Math.random()</strong> method to
+        generate a random floating-point number between 0 (inclusive) and 1
+        (exclusive).
+      </li>
+      <li>
+        To generate a random integer within a specific range, you can combine
+        <code>Math.random()</code> with <code>Math.floor()</code> or
+        <code>Math.ceil()</code>.
+      </li>
+    </ul>
+    <pre>
+<code>
+// Generate a random floating-point number between 0 and 1
+console.log(Math.random());
+
+// Generate a random integer between min (inclusive) and max (exclusive)
+function getRandomInt(min, max) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+console.log(getRandomInt(1, 10)); // Random integer from 1 to 9
+
+// Generate a random integer between min and max (both inclusive)
+function getRandomIntInclusive(min, max) {
+    return Math.floor(Math.random() * (max - min + 1) + min);
+}
+console.log(getRandomIntInclusive(1, 10)); // Random integer from 1 to 10
+</code>
+    </pre>
+    <p>
+      <strong>Note:</strong> <code>Math.random()</code> does not provide
+      cryptographically secure random numbers. For security-sensitive
+      applications, use the Web Crypto API.
+    </p>
+    <div class="example">
+      <h2>Example: Random Number Generation</h2>
+      <button id= "roll" type="button">Roll</button>
+      <label id="label1"></label>
+      <label id="label2"></label>
+      <label id="label3"></label>
+      <script src="index.js"></script>
+    </div>
+  </body>
+</html>
