@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object in JavaScript</title>
+</head>
+<body>
+    <h1>Math Object in JavaScript</h1>
+    <ul>
+        <li>
+            The <strong>Math</strong> object is a built-in object that provides properties and methods for mathematical constants and functions.
+        </li>
+        <li>
+            <strong>Math</strong> is not a constructor, so you cannot create instances of it (do not use <code>new Math()</code>).
+        </li>
+        <li>
+            You can access all Math properties and methods directly using <code>Math.property</code> or <code>Math.method()</code>.
+        </li>
+        <li>
+            Some common properties:
+            <ul>
+                <li><code>Math.PI</code> (≈ 3.14159)</li>
+                <li><code>Math.E</code> (Euler's number, ≈ 2.71828)</li>
+            </ul>
+        </li>
+        <li>
+            Some common methods:
+            <ul>
+                <li><code>Math.round(x)</code> - Rounds <code>x</code> to the nearest integer</li>
+                <li><code>Math.floor(x)</code> - Rounds <code>x</code> down</li>
+                <li><code>Math.ceil(x)</code> - Rounds <code>x</code> up</li>
+                <li><code>Math.abs(x)</code> - Absolute value of <code>x</code></li>
+                <li><code>Math.pow(x, y)</code> - <code>x</code> to the power of <code>y</code></li>
+                <li><code>Math.sqrt(x)</code> - Square root of <code>x</code></li>
+                <li><code>Math.max(a, b, ...)</code> - Largest value</li>
+                <li><code>Math.min(a, b, ...)</code> - Smallest value</li>
+                <li><code>Math.random()</code> - Random number between 0 (inclusive) and 1 (exclusive)</li>
+                <li><code>Math.sin(x)</code>, <code>Math.cos(x)</code>, <code>Math.tan(x)</code> - Trigonometric functions</li>
+                <li><code>Math.log(x)</code> - Natural logarithm (base e)</li>
+            </ul>
+        </li>
+    </ul>
+    <pre>
+<code>
+// Examples:
+console.log(Math.PI); // 3.141592653589793
+console.log(Math.E); // 2.718281828459045
+console.log(Math.round(4.7)); // 5
+console.log(Math.floor(4.7)); // 4
+console.log(Math.ceil(4.1)); // 5
+console.log(Math.abs(-10)); // 10
+console.log(Math.pow(2, 3)); // 8
+console.log(Math.sqrt(16)); // 4
+console.log(Math.max(1, 2, 3)); // 3
+console.log(Math.min(1, 2, 3)); // 1
+console.log(Math.random()); // Random number between 0 and 1
+console.log(Math.sin(Math.PI / 2)); // 1
+console.log(Math.log(1)); // 0
+</code>
+    </pre>
+    <p>
+        The Math object is very useful for calculations, generating random numbers, and working with mathematical formulas in JavaScript.
+    </p>
+
+    <script src="index.js"></script>
+</body>
+</html>
