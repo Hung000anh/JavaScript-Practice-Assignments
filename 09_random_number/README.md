@@ -30,6 +30,6 @@ JavaScript provides the `Math.random()` method to generate random numbers. This 
 > `Math.random()` does **not** provide cryptographically secure random numbers.  
 > For security-sensitive applications, use the Web Crypto API.
 
-## Example
+## 🖼️ Preview
 
 ![Preview](gif/preview.gif)
