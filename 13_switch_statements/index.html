@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Statements in JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Switch Statements in JavaScript</h1>
+    <ul>
+        <li>
+            The <strong>switch</strong> statement is used to perform different actions based on different conditions.
+        </li>
+        <li>
+            It is an alternative to using multiple <code>if...else if...else</code> statements.
+        </li>
+        <li>
+            Each <code>case</code> is checked against the value, and the code block for the first matching case is executed.
+        </li>
+        <li>
+            The <code>break</code> statement stops the execution of more cases in the block.
+        </li>
+        <li>
+            The <code>default</code> case is executed if no match is found.
+        </li>
+    </ul>
+    <pre>
+<code>
+// Example:
+let day = 3;
+let dayName;
+switch (day) {
+    case 1:
+        dayName = "Monday";
+        break;
+    case 2:
+        dayName = "Tuesday";
+        break;
+    case 3:
+        dayName = "Wednesday";
+        break;
+    case 4:
+        dayName = "Thursday";
+        break;
+    case 5:
+        dayName = "Friday";
+        break;
+    case 6:
+        dayName = "Saturday";
+        break;
+    case 7:
+        dayName = "Sunday";
+        break;
+    default:
+        dayName = "Invalid day";
+}
+console.log(dayName); // "Wednesday"
+</code>
+    </pre>
+    <h2>Interactive Demo</h2>
+    <div class="center-demo">
+        <label for="dayInput">Enter a day number (1-7):</label>
+        <input type="number" id="dayInput" min="1" max="7" />
+        <button id="checkBtn">Check</button>
+        <p id="result"></p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
