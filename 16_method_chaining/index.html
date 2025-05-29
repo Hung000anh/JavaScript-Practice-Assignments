@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Method Chaining in JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Method Chaining in JavaScript</h1>
+    <ul>
+        <li>
+            <strong>Method chaining</strong> is a technique where multiple methods are called on the same object in a single statement.
+        </li>
+        <li>
+            Each method returns the object itself or another object, allowing further method calls.
+        </li>
+        <li>
+            Method chaining is common with strings, arrays, and libraries like jQuery.
+        </li>
+    </ul>
+    <pre>
+<code>
+// Without method chaining:
+let str = "   Hello, World!   ";
+let trimmed = str.trim();
+let upper = trimmed.toUpperCase();
+let replaced = upper.replace("WORLD", "JAVASCRIPT");
+console.log(replaced); // "HELLO, JAVASCRIPT!"
+
+// With method chaining:
+let result = "   Hello, World!   "
+    .trim()
+    .toUpperCase()
+    .replace("WORLD", "JAVASCRIPT");
+console.log(result); // "HELLO, JAVASCRIPT!"
+</code>
+    </pre>
+    <h2>Interactive Demo</h2>
+    <div class="center-demo">
+        <label for="chainInput">Enter a string:</label>
+        <input type="text" id="chainInput" value="   Hello, World!   " />
+        <button id="chainBtn">Chain Methods</button>
+        <div id="chainResult"></div>
+    </div>
+    <script src = "index.js">
+
+    </script>
+</body>
+</html>
