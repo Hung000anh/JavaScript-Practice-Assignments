@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>While Loops in JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>While Loops in JavaScript</h1>
+    <ul>
+        <li>
+            The <strong>while</strong> loop repeatedly executes a block of code as long as a specified condition is <code>true</code>.
+        </li>
+        <li>
+            The condition is evaluated before each iteration.
+        </li>
+        <li>
+            Use <strong>while</strong> loops when the number of iterations is not known in advance.
+        </li>
+    </ul>
+    <pre>
+<code>
+// Example:
+let count = 1;
+while (count <= 5) {
+    console.log("Count:", count);
+    count++;
+}
+// Output: 1 2 3 4 5
+</code>
+    </pre>
+    <h2>Interactive Demo</h2>
+    <div class="center-demo">
+        <label for="maxCount">Enter a number:</label>
+        <input type="number" id="maxCount" min="1" value="5" />
+        <button id="runWhile">Run While Loop</button>
+        <div id="whileResult"></div>
+    </div>
+    <script src="index.js">
+
+    </script>
+</body>
+</html>
