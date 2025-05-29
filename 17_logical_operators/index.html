@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logical Operators in JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Logical Operators in JavaScript</h1>
+    <ul>
+      <li>
+        Logical operators are used to combine or invert boolean values and
+        expressions.
+      </li>
+      <li>
+        <strong>AND (<code>&&</code>)</strong>: Returns <code>true</code> if
+        both operands are true.
+      </li>
+      <li>
+        <strong>OR (<code>||</code>)</strong>: Returns <code>true</code> if at
+        least one operand is true.
+      </li>
+      <li><strong>NOT (<code>!</code>)</strong>: Inverts the boolean value.</li>
+    </ul>
+    <pre>
+<code>
+// Examples:
+let a = true, b = false;
+console.log(a && b); // false
+console.log(a || b); // true
+console.log(!a);     // false
+
+// Practical example:
+let age = 20;
+let hasID = true;
+if (age >= 18 && hasID) {
+    console.log("Access granted.");
+} else {
+    console.log("Access denied.");
+}
+</code>
+    </pre>
+    <h2>Interactive Demo</h2>
+    <div class="center-demo">
+      <div>
+        <label>
+          <input type="checkbox" id="isAdult" /> Is adult (age ≥ 18)
+        </label>
+        <label> <input type="checkbox" id="hasID" /> Has ID card </label>
+      </div>
+
+      <button id="checkBtn">Check Access</button>
+      <div id="logicResult"></div>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
