@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Strict Equality in JavaScript</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <h1>Strict Equality (<code>===</code>) in JavaScript</h1>
+    <ul>
+        <li>
+            <strong>Strict equality</strong> (<code>===</code>) checks if two values are equal <b>and</b> of the same type.
+        </li>
+        <li>
+            It does <b>not</b> perform type conversion, unlike the loose equality operator (<code>==</code>).
+        </li>
+        <li>
+            Use <code>!==</code> for strict inequality.
+        </li>
+    </ul>
+    <pre>
+<code>
+// Examples:
+console.log(5 === 5);       // true
+console.log(5 === "5");     // false
+console.log(0 === false);   // false
+console.log(null === undefined); // false
+console.log("abc" === "abc"); // true
+
+// Loose equality for comparison:
+console.log(5 == "5");      // true (type conversion happens)
+</code>
+    </pre>
+    <!-- <h2>Interactive Demo</h2>
+    <div class="center-demo">
+        <label for="val1">Value 1:</label>
+        <input type="text" id="val1" value="5" />
+        <label for="val2">Value 2:</label>
+        <input type="text" id="val2" value="5" />
+        <button id="compareBtn">Compare</button>
+        <div id="strictResult"></div>
+    </div>
+    <script src="index.js">
+
+    </script> -->
+</body>
+</html>
