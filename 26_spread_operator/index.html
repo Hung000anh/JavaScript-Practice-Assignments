@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Spread Operator in JavaScript</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Spread Operator in JavaScript</h1>
+    <p>The spread operator <code>...</code> allows an iterable such as an array or string to be expanded in places where zero or more arguments or elements are expected.</p>
+
+    <h2>Examples:</h2>
+    <pre><code>
+let array = [1, 2, 3, 4, 5];
+let max = Math.max(...array);  // Spread array into individual numbers
+let min = Math.min(...array);
+
+console.log(array.length);
+console.log(max);
+console.log(min);
+
+let username = "Bro Code";
+let letter = [...username];    // Spread string into characters
+console.log(letter);
+console.log(letter.join("-"));
+
+let fruits = ["apple", "orange", "banana"];
+let vegetable = ["carrots", "celery", "potatoes"];
+let newFruit = [...fruits, ...vegetable, "eggs", "milks"];  // Combine arrays
+
+console.log(newFruit);
+    </code></pre>
+
+    <p>Open the console to see the output!</p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
