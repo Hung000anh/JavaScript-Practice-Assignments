@@ -1,0 +1,30 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tempture_conv_app{
+    text-align: center;
+    background-color: aliceblue;
+    width: 400px;
+    border: 1px solid rgb(182, 140, 140);
+    border-radius: 5px;
+}
+h1{
+    color: rgb(98, 98, 247);
+}
+
+#temptureValue{
+    margin: 20px 20px;
+}
+
+label {
+    font-weight: bold;
+}
+button 
+{
+    margin: 20px 20px;
+    background-color: red;
+    border-radius: 5px;
+}
