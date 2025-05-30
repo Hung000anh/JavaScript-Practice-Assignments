@@ -1,0 +1,33 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 800px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: #333;
+}
+
+code {
+  background-color: #979797;
+  padding: 2px 5px;
+  border-radius: 5px;
+}
+
+pre {
+  background-color: #4d4d4d;
+  color: #f8f8f2;
+  padding: 20px;
+  overflow-x: auto;
+  border-radius: 10px;
+}
