@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript Rest Parameters</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript Rest Parameters</h1>
+    <p>Rest parameters allow a function to accept an indefinite number of arguments as an array.</p>
+
+    <h2>Syntax</h2>
+    <pre><code>function exampleFunction(...args) {
+  console.log(args);
+}</code></pre>
+
+    <h2>Example</h2>
+    <pre><code>function sum(...numbers) {
+  return numbers.reduce((total, num) => total + num, 0);
+}
+
+console.log(sum(1, 2, 3)); // Output: 6
+console.log(sum(5, 10, 15, 20)); // Output: 50</code></pre>
+
+    <button onclick="showSum()">Run JS Example</button>
+    <p id="output"></p>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
