@@ -1,0 +1,23 @@
+.container{
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+}
+input {
+    width: 50px;
+}
+button {
+    background-color: rgb(15, 138, 196);
+    border-radius: 5px;
+}
+button:hover
+{
+    background-color: aqua;
+    cursor: pointer;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
