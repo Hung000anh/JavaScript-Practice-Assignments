@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>JavaScript forEach Example</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>JavaScript forEach Method</h1>
+    <p>The <code>forEach()</code> method executes a provided function once for each array element.</p>
+
+    <h2>Example Code:</h2>
+    <pre><code>
+// JavaScript forEach example
+const fruits = ['Apple', 'Banana', 'Cherry', 'Date', 'Elderberry'];
+
+const listElement = document.getElementById('fruit-list');
+const button = document.getElementById('run-example');
+
+button.addEventListener('click', () => {
+  // Clear the list before running example
+  listElement.innerHTML = '';
+
+  // Using forEach to iterate over fruits array
+  fruits.forEach((fruit, index) => {
+    const li = document.createElement('li');
+    li.textContent = `${index + 1}. ${fruit}`;
+    listElement.appendChild(li);
+  });
+});
+    </code></pre>
+
+    <h2>Result:</h2>
+    <ul id="fruit-list"></ul>
+    <button id="run-example">Run forEach Example</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
