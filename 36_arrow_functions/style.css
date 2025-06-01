@@ -1,0 +1,30 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 40px;
+  background-color: #fffef6;
+  color: #222;
+}
+
+h1 {
+  color: #1a73e8;
+}
+
+.output {
+  margin-top: 20px;
+  background: #f0f4ff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(26, 115, 232, 0.2);
+}
+
+p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+code {
+  background-color: #e8e8e8;
+  padding: 2px 5px;
+  border-radius: 3px;
+  font-family: monospace;
+}
