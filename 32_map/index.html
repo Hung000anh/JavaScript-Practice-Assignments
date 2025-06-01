@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.filter() Example</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>.filter()</h1>
+    <p><code>.filter()</code> creates a new array by filtering out elements based on a condition.</p>
+    <pre>
+<code>
+let numbers = [1, 2, 3, 4, 5, 6, 7];
+let evenNumbers = numbers.filter(isEven);
+let oddNumbers = numbers.filter(isOdd);
+
+const ages = [12, 15, 18, 20, 22, 25, 30];
+const adults = ages.filter(isAdult);
+const children = ages.filter(isChild);
+
+const words = ["hello", "world", "JavaScript", "filter"];
+const shortWords = words.filter(isShort);
+const longWords = words.filter(isLong);
+
+function isEven(num) {
+    return num % 2 === 0;
+}
+function isOdd(num) {
+    return num % 2 !== 0;
+}
+function isAdult(age) {
+    return age >= 18;
+}
+function isChild(age) {
+    return age < 18;
+}
+function isShort(word) {
+    return word.length < 5;
+}
+function isLong(word) {
+    return word.length >= 5;
+}
+
+console.log("Even Numbers:", evenNumbers); // [2, 4, 6]
+console.log("Odd Numbers:", oddNumbers);   // [1, 3, 5, 7]
+console.log("Adults:", adults);            // [18, 20, 22, 25, 30]
+console.log("Children:", children);        // [12, 15]
+console.log("Short Words:", shortWords);   // []
+console.log("Long Words:", longWords);     // ["hello", "world", "JavaScript", "filter"]
+</code>
+    </pre>
+
+    <script src="index.js"></script>
+</body>
+</html>
