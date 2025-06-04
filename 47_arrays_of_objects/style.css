@@ -1,0 +1,22 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  padding: 2rem;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+p {
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+pre {
+  background: #eaeaea;
+  padding: 1rem;
+  border-radius: 5px;
+  white-space: pre-wrap;
+}
