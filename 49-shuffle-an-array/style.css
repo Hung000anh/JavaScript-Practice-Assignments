@@ -1,0 +1,35 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 2rem;
+  background-color: #f5f8fa;
+  color: #333;
+}
+
+h1 {
+  color: #2c3e50;
+}
+
+p {
+  max-width: 700px;
+  line-height: 1.6;
+}
+
+.card-list {
+  margin-top: 10px;
+  margin-bottom: 2rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  border-radius: 8px;
+}
+
+.card-list span {
+  padding: 0.5rem 1rem;
+  background: #3498db;
+  color: white;
+  border-radius: 4px;
+  font-weight: bold;
+}
