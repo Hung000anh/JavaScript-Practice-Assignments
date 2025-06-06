@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+  background-image: url('https://media.istockphoto.com/id/1363464562/photo/aerial-sunset-view-at-landmark-81-it-is-a-super-tall-skyscraper-and-saigon-bridge-with.jpg?s=612x612&w=0&k=20&c=sZdHZI-4N6XqkDWi83VCeDQkQNdl2hz3MY1QRb4Rh9I=');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  backdrop-filter: blur(4px);
+}
+
+#clock {
+  font-family: 'Courier New', monospace;
+  font-size: 6.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 20px 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
