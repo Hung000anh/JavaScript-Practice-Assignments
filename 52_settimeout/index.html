@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JavaScript setTimeout()</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>⏱ JavaScript <code>setTimeout()</code></h1>
+    <p>
+      <strong>setTimeout()</strong> is a function in JavaScript that schedules the execution of another function 
+      after a specified delay (in milliseconds). The delay is approximate and may vary depending on the runtime workload.
+    </p>
+    <p><code>setTimeout(callback, delay)</code></p>
+
+    <div class="buttons">
+      <button onclick="startTimer()">Start</button>
+      <button onclick="clearTimer()">Clear</button>
+    </div>
+
+    <p id="status">Timer not started</p>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
