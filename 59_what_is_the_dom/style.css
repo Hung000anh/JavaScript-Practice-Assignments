@@ -1,0 +1,15 @@
+body {
+  background-color: hsl(0, 0%, 15%);
+  color: white;
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #00ffff;
+}
+
+p {
+  max-width: 600px;
+  line-height: 1.6;
+}
