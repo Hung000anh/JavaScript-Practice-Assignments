@@ -1,21 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Element Selectors Demo</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>element selectors</h1>
-    <p>
-element selectors = Methods used to target and manipulate HTML elements They allow you to select one or multiple HTML elements from the DOM (Document Object Model)
-    </p>
-    <p>1. document.getElementById() // ELEMENT OR NULL <br>
-    2. document.getElementsClassName()  // HTML COLLECTION <br>
-    3. document.getElementsByTagName() // HTML COLLECTION <br>
-    4. document.querySelector() // ELEMENT OR NULL <br>
-    5. document.querySelectorAll() // NODELIST <br>
-    </p>
-    <script src="index.js"></script>
+  <h1 id="myHeading">Food R Us</h1>
+
+  <p>
+    <strong>Element Selectors</strong> are methods used to target and manipulate HTML elements. They allow you to select one or more HTML elements from the DOM (Document Object Model).
+  </p>
+
+  <p>
+    1. <code>document.getElementById()</code> - returns Element or null <br/>
+    2. <code>document.getElementsByClassName()</code> - returns HTMLCollection <br/>
+    3. <code>document.getElementsByTagName()</code> - returns HTMLCollection <br/>
+    4. <code>document.querySelector()</code> - returns Element or null <br/>
+    5. <code>document.querySelectorAll()</code> - returns NodeList <br/>
+  </p>
+
+  <div class="fruits">Apple</div>
+  <div class="fruits">Orange</div>
+  <div class="fruits">Banana</div>
+
+  <h2>Root Vegetables</h2>
+  <ul>
+    <li>Beets</li>
+    <li>Celery</li>
+    <li>Onions</li>
+  </ul>
+
+  <script src="index.js"></script>
 </body>
 </html>
