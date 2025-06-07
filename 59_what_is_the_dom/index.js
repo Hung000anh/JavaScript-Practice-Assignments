@@ -1,9 +1,6 @@
-document.title = "My website"
-document.body.style.backgroundColor = "hsl(0, 0%, 15%)"
-console.dir(document)
+document.title = "My Website";
 
-const username = " bro code";
-const welcomeMsg = document.getElementById("welcome-msg")
-welcomeMsg.textContent += username === "" ? 'Guest' : username;
+const username = "bro code"; // Change this to "" to test "Guest"
+const welcomeMsg = document.getElementById("welcome-msg");
 
-console.dir(document);
+welcomeMsg.textContent += username.trim() === "" ? "Guest" : username;
