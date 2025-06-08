@@ -82,10 +82,8 @@ function editItem() {
 
   selectedItem.textContent = newText;
 
-  // Đảm bảo sự kiện click vẫn được giữ lại sau khi thay đổi nội dung
   selectedItem.onclick = function () {
     selectItem(this);
   };
 
-  updateHTMLPreview(); // Nếu bạn có chức năng xem HTML động
 }
