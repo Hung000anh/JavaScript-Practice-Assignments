@@ -1,0 +1,30 @@
+
+/* Custom styles for the body and container to center content and apply a base font */
+body {
+    font-family: 'Inter', sans-serif; /* Using Inter font as recommended */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Full viewport height */
+    background-color: #f0f4f8; /* Light background color */
+    color: #334155; /* Dark grey text color */
+    padding: 20px; /* Padding around the content */
+}
+.container {
+    max-width: 600px; /* Maximum width of the container */
+    width: 100%; /* Full width up to max-width */
+    text-align: center; /* Center align text inside container */
+    background-color: #ffffff; /* White background for the container */
+    border-radius: 1rem; /* Rounded corners for the container */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* Soft shadow */
+    padding: 1.5rem; /* Padding inside the container */
+}
+button
+{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+    margin: 10px ;
+    background-color: rgb(76, 160, 255);
+}
