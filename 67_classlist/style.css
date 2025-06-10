@@ -1,0 +1,19 @@
+button
+{
+    width: 200px;
+    height: 50px;
+    border-radius: 20px;
+}
+
+.add
+{
+    background-color: aquamarine;
+}
+.remove
+{
+    background-color: rgb(47, 96, 139);
+}
+.toggle
+{
+    background-color: yellowgreen;
+}
