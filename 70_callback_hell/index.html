@@ -1,13 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Callback Hell Example</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <h1>Callback Hell</h1>
-    <p>Callback = Situation in JavaScript where callbacks are nested within other callbacks to the degree where the code is difficult to read. old pattern to handle asynchronous functions. Use Promises + async/await to avoid Callback Hell</p>
-    <script src="index.js"></script>
+  <div class="container">
+    <h1>Callback Hell 🔥</h1>
+    <p>
+      "Callback hell" happens when callbacks are nested within other callbacks to the point where code becomes hard to read and maintain.
+      This was an old way of handling asynchronous operations in JavaScript.
+      It's better to use <strong>Promises</strong> or <strong>async/await</strong> instead.
+    </p>
+    <button id="start">Start Example</button>
+    <div class="output" id="output"></div>
+  </div>
+  <script src="index.js"></script>
 </body>
 </html>
