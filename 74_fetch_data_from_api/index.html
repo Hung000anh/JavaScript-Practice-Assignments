@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fetch Pokémon</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div>
+    <h1>
+      fetch = Function used for making HTTP requests to fetch resources. (JSON style data, images, files) <br>
+    </h1>
+    <p>
+      Simplifies asynchronous data fetching in JavaScript and used for interacting with APIs to retrieve and send data asynchronously over the web. <br>
+      fetch(url, {options})
+    </p>
+  </div>
+
+  <div class="container">
+    <input type="text" id="PokemonName" placeholder="Input your Pokémon" />
+    <button onclick="fetchDataPokeMon()">Enter</button>
+
+    <div id="result">
+      <h2 id="pokemon-name"></h2>
+      <img id="ImgPokeMon" src="" alt="Pokémon" />
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
